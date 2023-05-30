@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+
+    <link rel="stylesheet" href="./stylesheets/theme.css" />
+    <link rel="stylesheet" href="./stylesheets/home.css" />
+    <link rel="stylesheet" href="./stylesheets/all.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container header-container" role="heading">
+        <h1 class="page-title" aria-label="Page title navigates to home screen">
+          Web Topics
+        </h1>
+
+        <div class="btns-container">
+          <button
+            class="text-btn theme-toggle"
+            role="button"
+            aria-label="Changes the page's theme"
+          >
+            <ion-icon name="moon-outline"></ion-icon>
+            <p class="text-btn-title">Dark Mode</p>
+          </button>
+
+          <button
+            class="text-btn favorite-btn"
+            role="button"
+            aria-label="Toggles the favorites section"
+          >
+            <ion-icon name="heart-outline"></ion-icon>
+            <p class="text-btn-title">Favourites</p>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="welcome-div">
+        <div class="gradiant-container">
+          <div class="triangle-left"></div>
+          <div class="triangle-right"></div>
+        </div>
+
+        <div class="welcome-content">
+          <h2 class="welcome-title">Welcome to our website!</h2>
+          <h3 class="welcome-sub-title">
+            We have a new design that's fresh,modern and easy to use.
+          </h3>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="search-bar" role="search">
+          <div class="search-input">
+            <ion-icon
+              name="search-outline"
+              class="search-icon"
+              role="icon"
+            ></ion-icon>
+            <input
+              type="text"
+              placeholder="Search the website..."
+              role="searchbox"
+              aria-label="Enter anything to search for"
+            />
+          </div>
+
+          <div class="select-container">
+            <div class="select-wrapper">
+              <label for="select1" class="select-label" role="Select label"
+                >Sort by:</label
+              >
+              <select
+                id="select1"
+                role="select"
+                aria-label="Select option to sort by"
+              >
+                <option value="option1" class="select-option" tabindex="1">
+                  Default
+                </option>
+                <option value="option2" class="select-option" tabindex="2">
+                  Default
+                </option>
+                <option value="option3" class="select-option" tabindex="3">
+                  Default
+                </option>
+              </select>
+            </div>
+            <div class="select-wrapper">
+              <label for="select2" class="select-label">Filter by:</label>
+              <select
+                id="select2"
+                role="select"
+                aria-label="Select option to sort by"
+              >
+                <option value="option1" class="select-option" tabindex="1">
+                  Default
+                </option>
+                <option value="option2" class="select-option" tabindex="2">
+                  Default
+                </option>
+                <option value="option3" class="select-option" tabindex="3">
+                  Default
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <h2 class="results container">"24" Web Topics Found</h2>
+      <div class="grid-container container" role="grid"></div>
+    </main>
+
+    <div class="favorites container" role="favorites">
+      <h2>My Favourite Topics</h2>
+      <div
+        class="slider"
+        role="slider"
+        aria-label="Slide to show all favorites"
+      >
+        <article class="favorite-topic">
+          <img src="./assets/logos/react.webp" />
+          <section>
+            <h2>React</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+        <article class="favorite-topic">
+          <img src="./assets/logos/cloud.jpeg" />
+          <section>
+            <h2>Cloud Computing CC</h2>
+            <div>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+
+    <footer class="container">
+      <p>Developed with</p>
+      <ion-icon name="heart"></ion-icon>
+      <p>&copy; 2023</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="js/constants.js"></script>
+
+    <script src="js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+:root {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg-default: #ffffff;
+  --bg-body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+  --star-color: #eb9f25;
+}
+[data-theme="dark"] {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg-default: #1a1a1a;
+  --bg-body: #282828;
+  --lines-color: #000000;
+  --body-text: #ededed;
+  --heart-color: #dc143c;
+  --star-color: #eb9f25;
+}
