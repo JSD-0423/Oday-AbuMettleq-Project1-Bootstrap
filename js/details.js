@@ -15,9 +15,3 @@ const popupContainer = document.querySelector(".favorites");
 popupButton.addEventListener("click", function () {
   popupContainer.classList.toggle("active");
 });
-
-var heading = document.querySelector(".page-title");
-
-heading.addEventListener("click", function () {
-  window.location.href = "../index.html";
-});
