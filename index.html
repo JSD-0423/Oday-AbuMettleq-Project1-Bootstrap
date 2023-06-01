@@ -148,6 +148,29 @@
 
       <h2 class="results container-fluid px-lg-5">"24" Web Topics Found</h2>
 
+      <!-- <a href="./html/details.html" style="text-decoration: none">
+        <div class="card grid-item border-0 h-100">
+          <img
+            src="./assets/logos/html.png"
+            alt="HTML"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div>
+              <h2 class="card-title">Web Development Languages</h2>
+              <h3 class="card-text">HTML</h3>
+            </div>
+            <div class="rating">
+              <ion-icon name="star" class="rate-star"></ion-icon>
+              <ion-icon name="star" class="rate-star"></ion-icon>
+              <ion-icon name="star" class="rate-star"></ion-icon>
+              <ion-icon name="star" class="rate-star"></ion-icon>
+              <ion-icon name="star-half-outline" class="rate-star"></ion-icon>
+            </div>
+            <h3 class="author">Author: [element.author]</h3>
+          </div>
+        </div>
+      </a> -->
       <div class="grid-container container-fluid px-lg-5 px-sm-3" role="grid">
         <a href="./html/details.html" style="text-decoration: none">
           <article
@@ -267,15 +290,15 @@
       </div>
     </main>
 
-    <div class="favorites container" role="favorites">
+    <div class="favorites container-fluid d-flex justify-content-evenly flex-column px-sm-4 px-lg-5 position-fixed bottom-0" role="favorites">
       <h2>My Favourite Topics</h2>
       <div
-        class="slider"
+        class="slider w-100 d-flex align-items-center gap-4 pe-2"
         role="slider"
         aria-label="Slide to show all favorites"
       >
-        <article class="favorite-topic">
-          <img src="./assets/logos/react.webp" />
+        <article class="favorite-topic d-flex flex-column ">
+          <img src="./assets/logos/react.webp" alt="" class="m-0 w-100 object-fit-cover h-55" />
           <section>
             <h2>React</h2>
             <div>
@@ -287,10 +310,10 @@
             </div>
           </section>
         </article>
-        <article class="favorite-topic">
-          <img src="./assets/logos/cloud.jpeg" />
+        <article class="favorite-topic d-flex flex-column ">
+          <img src="./assets/logos/react.webp" alt="" class="m-0 w-100 object-fit-cover h-55" />
           <section>
-            <h2>Cloud Computing CC</h2>
+            <h2>React</h2>
             <div>
               <ion-icon name="star"></ion-icon>
               <ion-icon name="star"></ion-icon>
@@ -303,8 +326,10 @@
       </div>
     </div>
 
-    <footer class="container-fluid d-flex justify-content-center align-items-center gap-2 my-4">
-      <p class="reset ">Developed with</p>
+    <footer
+      class="container-fluid d-flex justify-content-center align-items-center gap-2 my-4"
+    >
+      <p class="reset">Developed with</p>
       <ion-icon name="heart"></ion-icon>
       <p class="reset">&copy; 2023</p>
     </footer>
