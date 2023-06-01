@@ -31,7 +31,7 @@ function createArticles() {
 
   gridContainer.innerHTML = html;
 }
-createArticles();
+// createArticles();
 
 const popupButton = document.querySelector(".favorite-btn");
 const popupContainer = document.querySelector(".favorites");

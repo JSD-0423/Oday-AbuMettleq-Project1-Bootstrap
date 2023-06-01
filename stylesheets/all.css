@@ -16,7 +16,10 @@ h5,
 h6 {
   margin: 0;
 }
-
+.reset{
+  margin:0;
+  padding: 0;
+}
 .container {
   padding-inline: 3.6rem;
 }
@@ -28,20 +31,18 @@ header {
 .text-btn {
   color: var(--body-text);
   height: 2rem;
-  padding-inline: 0.7rem;
+
   background: none;
   background-color: var(--bg-default);
   border: 1px solid var(--lines-color);
   border-radius: 0.3rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.35rem;
   font-size: 0.9rem;
   font-weight: 400;
 }
-
+a{
+  text-decoration: none;
+}
 .header-container {
   position: relative;
   z-index: 100;
@@ -61,14 +62,8 @@ header {
   cursor: pointer;
 }
 .welcome-div {
-  text-align: left;
-  width: 100%;
   background-color: var(--bg-default);
   height: 7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .gradiant-container {
@@ -105,17 +100,15 @@ header {
 }
 
 .welcome-content {
-  position: absolute;
   background-color: transparent;
   top: 7.4rem;
-  padding-inline: 1rem;
+
 }
 
 .welcome-title {
   color: var(--brand-secondary);
   font-weight: 700;
   font-size: 1.4rem;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -126,11 +119,6 @@ header {
   font-size: 1rem;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
 
 .favorites {
   position: fixed;
@@ -227,11 +215,7 @@ main {
 footer {
   color: var(--body-text);
   font-weight: 400;
-  margin-block-end: 1rem;
-  display: flex;
-  gap: 0.4rem;
-  justify-content: center;
-  align-items: center;
+
 }
 
 footer ion-icon {
@@ -242,7 +226,7 @@ footer ion-icon {
 
 @media (max-width: 625px) {
   .welcome-content {
-    top: 6.9rem;
+    top: 7.2rem;
   }
   .welcome-content h2 {
     display: -webkit-box;
