@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 
-    <link rel="stylesheet" href="../stylesheets/theme.css"" />
+    <link rel="stylesheet" href="../stylesheets/theme.css" />
     <link rel="stylesheet" href="../stylesheets/details.css" />
     <link rel="stylesheet" href="../stylesheets/all.css" />
 
@@ -15,142 +15,163 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
+      <nav
+        class="container-fluid px-sm-4 px-lg-5 h-100 d-flex justify-content-between align-items-center"
+        role="heading"
+      >
+        <a href="../index.html" class="text-decoration-none">
+          <h1
+            class="page-title m-0"
+            aria-label="Page title navigates to home screen"
+          >
+            Web Topics
+          </h1>
+        </a>
 
-      <nav class="container header-container" role="heading">
-        <a href="../index.html"><h1 class="page-title" aria-label="Page title navigates to home screen">
-          Web Topics
-        </h1>
-       </a>
-
-        <div class="btns-container">
-
+        <div class="btns-container d-flex gap-1">
           <button
-            class="text-btn theme-toggle"
+            class="text-btn theme-toggle d-flex justify-content-center align-items-center gap-1 px-2"
             role="button"
             aria-label="Changes the page's theme"
           >
             <ion-icon name="moon-outline"></ion-icon>
-            <p class="text-btn-title">Dark Mode</p>
+            <p class="text-btn-title reset px-1">Dark Mode</p>
           </button>
 
           <button
-            class="text-btn favorite-btn"
+            class="text-btn favorite-btn d-flex justify-content-center align-items-center gap-1 px-2"
             role="button"
             aria-label="Toggles the favorites section"
           >
             <ion-icon name="heart-outline"></ion-icon>
-            <p class="text-btn-title">Favourites</p>
+            <p class="text-btn-title reset px-1">Favourites</p>
           </button>
-          
         </div>
       </nav>
     </header>
 
     <main>
-      <div class="welcome-div">
+      <div
+        class="welcome-div w-100 text-start d-flex flex-column justify-content-center align-items-center"
+      >
         <div class="gradiant-container">
           <div class="triangle-left"></div>
           <div class="triangle-right"></div>
         </div>
 
-        <div class="welcome-content">
-          <h2 class="welcome-title">Welcome to our website!</h2>
-          <h3 class="welcome-sub-title">
+        <div class="welcome-content position-absolute px-4">
+          <h2 class="welcome-title reset overflow-hidden">
+            Welcome to our website!
+          </h2>
+          <h3 class="welcome-sub-title reset">
             We have a new design that's fresh,modern and easy to use.
           </h3>
         </div>
       </div>
 
-   
-        <div class="topic-details details-container">
-          <div class="main-width">
-            <h2 class="category">Web Development Languages</h2>
-            <h3 class="title">HTML</h3>
-            <div class="rating">
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
-            </div>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
-              sit ipsam sint inventore exercitationem ex rem deserunt, odit sed
-              quis, officiis veniam? Explicabo quaerat sunt voluptates eaque
-              distinctio! Error, dolore! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Beatae adipisci similique at provident nemo
-              porro distinctio et velit, consectetur vitae. Architecto sunt
-              accusamus ab maxime doloribus dicta similique
-            </p> 
+      <div class="topic-details details-container">
+        <div class="main-width">
+          <h2 class="category">Web Development Languages</h2>
+          <h3 class="title">HTML</h3>
+          <div class="rating">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
           </div>
-
-          <aside class="side-bar">
-            <img src="../assets/logos/javascript.jpg" alt="HTML" />
-            <section class="side-bar-content">
-              <h3><strong>HTML</strong> by <a href="#">Sarah Smith</a></h3>
-              <div class="add-to-fav">
-                <h3>Interested in this topic?</h3>
-                <button class="add-to-favorites">
-                  <p>Add to Favorites</p>
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-                <h4>Unlimited Credits</h4>
-              </div>
-            </section>
-          </aside>
-          
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, sit
+            ipsam sint inventore exercitationem ex rem deserunt, odit sed quis,
+            officiis veniam? Explicabo quaerat sunt voluptates eaque distinctio!
+            Error, dolore! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Beatae adipisci similique at provident nemo porro distinctio
+            et velit, consectetur vitae. Architecto sunt accusamus ab maxime
+            doloribus dicta similique
+          </p>
         </div>
 
-        <div class="sub-topics details-container">
-
-
-          <section class="sub-topics-content main-width">
-            <h2>HTML Sub Topics</h2>
-
-            <div>
-              <ion-icon name="checkmark-circle-outline" class="check-mark">
-              </ion-icon>
-              <h3>HTML syntax and structure</h3>
-            </div>
-
-            <div>
-              <ion-icon name="checkmark-circle-outline" class="check-mark">
-              </ion-icon>
-              <h3>HTML syntax and structure</h3>
-            </div>
-            <div>
-              <ion-icon name="checkmark-circle-outline" class="check-mark">
-              </ion-icon>
-              <h3>HTML syntax and structure</h3>
-            </div>
-            <div>
-              <ion-icon name="checkmark-circle-outline" class="check-mark">
-              </ion-icon>
-              <h3>HTML syntax and structure</h3>
-            </div>
-            <div>
-              <ion-icon name="checkmark-circle-outline" class="check-mark">
-              </ion-icon>
-              <h3>HTML syntax and structure</h3>
-            </div>
-            <div>
-              <ion-icon name="checkmark-circle-outline" class="check-mark">
-              </ion-icon>
-              <h3>HTML syntax and structure</h3>
+        <aside class="side-bar">
+          <img src="../assets/logos/javascript.jpg" alt="HTML" />
+          <section class="side-bar-content">
+            <h3><strong>HTML</strong> by <a href="#">Sarah Smith</a></h3>
+            <div class="add-to-fav">
+              <h3>Interested in this topic?</h3>
+              <button class="add-to-favorites">
+                <p>Add to Favorites</p>
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+              <h4>Unlimited Credits</h4>
             </div>
           </section>
+        </aside>
+      </div>
 
+      <div class="sub-topics details-container">
+        <section class="sub-topics-content main-width">
+          <h2>HTML Sub Topics</h2>
+
+          <div>
+            <ion-icon name="checkmark-circle-outline" class="check-mark">
+            </ion-icon>
+            <h3>HTML syntax and structure</h3>
+          </div>
+
+          <div>
+            <ion-icon name="checkmark-circle-outline" class="check-mark">
+            </ion-icon>
+            <h3>HTML syntax and structure</h3>
+          </div>
+          <div>
+            <ion-icon name="checkmark-circle-outline" class="check-mark">
+            </ion-icon>
+            <h3>HTML syntax and structure</h3>
+          </div>
+          <div>
+            <ion-icon name="checkmark-circle-outline" class="check-mark">
+            </ion-icon>
+            <h3>HTML syntax and structure</h3>
+          </div>
+          <div>
+            <ion-icon name="checkmark-circle-outline" class="check-mark">
+            </ion-icon>
+            <h3>HTML syntax and structure</h3>
+          </div>
+          <div>
+            <ion-icon name="checkmark-circle-outline" class="check-mark">
+            </ion-icon>
+            <h3>HTML syntax and structure</h3>
+          </div>
+        </section>
+      </div>
     </main>
-    <div class="favorites container">
+    <div
+      class="favorites container-fluid d-flex justify-content-evenly flex-column px-sm-4 px-lg-5 position-fixed bottom-0"
+      role="favorites"
+    >
       <h2>My Favourite Topics</h2>
-      <div class="slider">
-        <article class="favorite-topic">
-          <img src="../assets/logos/react.webp" />
+      <div
+        class="slider w-100 d-flex align-items-center gap-4 pe-2"
+        role="slider"
+        aria-label="Slide to show all favorites"
+      >
+        <article class="favorite-topic d-flex flex-column">
+          <img
+            src="./assets/logos/react.webp"
+            alt=""
+            class="m-0 w-100 object-fit-cover h-55"
+          />
           <section>
-            <h2>Topic</h2>
+            <h2>React</h2>
             <div>
               <ion-icon name="star"></ion-icon>
               <ion-icon name="star"></ion-icon>
@@ -160,10 +181,14 @@
             </div>
           </section>
         </article>
-        <article class="favorite-topic">
-          <img src="../assets/logos/cloud.jpeg" />
+        <article class="favorite-topic d-flex flex-column">
+          <img
+            src="./assets/logos/react.webp"
+            alt=""
+            class="m-0 w-100 object-fit-cover h-55"
+          />
           <section>
-            <h2>Cloud Computing CC</h2>
+            <h2>React</h2>
             <div>
               <ion-icon name="star"></ion-icon>
               <ion-icon name="star"></ion-icon>
@@ -176,11 +201,18 @@
       </div>
     </div>
 
-    <footer class="container">
-      <p>Developed with</p>
+    <footer
+      class="container-fluid d-flex justify-content-center align-items-center gap-2 my-4"
+    >
+      <p class="reset">Developed with</p>
       <ion-icon name="heart"></ion-icon>
-      <p>&copy; 2023</p>
+      <p class="reset">&copy; 2023</p>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

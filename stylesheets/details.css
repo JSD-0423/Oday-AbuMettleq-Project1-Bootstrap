@@ -2,6 +2,7 @@
   padding-inline: 19%;
 }
 
+
 .topic-details {
   display: flex;
   justify-content: start;
@@ -169,8 +170,8 @@
   .topic-details {
     flex-direction: column;
   }
-  .side-bar{
-    width: 100%
+  .side-bar {
+    width: 100%;
   }
 }
 

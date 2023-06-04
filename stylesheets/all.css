@@ -40,9 +40,11 @@ header {
   font-size: 0.9rem;
   font-weight: 400;
 }
+
 a{
   text-decoration: none;
 }
+
 .header-container {
   position: relative;
   z-index: 100;
@@ -153,9 +155,6 @@ a{
 .favorite-topic img {
 
   background-color: white;
-
-
-
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
 }

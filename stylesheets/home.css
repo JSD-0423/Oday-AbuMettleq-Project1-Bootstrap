@@ -1,31 +1,19 @@
 .search-bar {
   background-color: var(--bg-default);
-  border-radius: 0.65rem;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px -5px;
 }
 
-
-
-.search-input {
-  flex-grow: 2;
-}
-
-.search-input ion-icon {
+.search-icon  {
   color: var(--body-text);
   margin-right: -2rem;
 }
 
-.search-input input {
+.search-input {
   font-size: 1rem;
   font-weight: 400;
-  background-color: transparent;
   outline-color: var(--brand-primary);
-  border-top-left-radius: 0.65rem;
-  border-bottom-left-radius: 0.65rem;
-
 }
 
-.search-input input::placeholder {
+.search-input::placeholder {
   font-size: 1rem;
   font-weight: 400;
 }
@@ -55,6 +43,7 @@
 }
 
 .results {
+  font-size: 1.5rem;
   color: var(--body-text);
   font-weight: 700;
 }
@@ -135,7 +124,7 @@
 }
 
 @media (max-width: 625px) {
-  .search-input input {
+  .search-input {
     border-bottom-left-radius: 0;
     padding-block: 1rem;
   }
