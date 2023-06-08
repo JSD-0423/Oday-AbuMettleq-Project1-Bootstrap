@@ -98,7 +98,11 @@ async function createPage() {
       : "Add to Favorites";
     button.appendChild(p);
     button.addEventListener("click", () => {
-      p.textContent = checkExists(id) ? "Remove from Favorites" : "Add to Favorites";
+      p.textContent = checkExists(id)
+        ? "Remove from Favorites"
+        : "Add to Favorites";
+      icon.name = checkExists(id) ? "heart" : "heart-outline";
+      icon.style.color = `var(  --heart-color)`;
     });
     // Create the ion-icon element
     const icon = document.createElement("ion-icon");
@@ -153,8 +157,4 @@ async function addToF() {
 }
 async function getTopicDetails() {
   return await getTopic(id);
-}
-
-function buttonState() {
-  buttonText = checkExists(id) ? "Remove from Favorites" : "Add to Favorites";
 }
