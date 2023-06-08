@@ -1,8 +1,56 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.loading-Circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loading-Circle div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid var(--brand-primary);
+  border-radius: 50%;
+  animation: loading-Circle 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: var(--brand-primary) transparent transparent transparent;
+}
+.loading-Circle div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.loading-Circle div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.loading-Circle div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes loading-Circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .search-bar {
   background-color: var(--bg-default);
 }
 
-.search-icon  {
+.search-icon {
   color: var(--body-text);
   margin-right: -2rem;
 }
@@ -11,6 +59,7 @@
   font-size: 1rem;
   font-weight: 400;
   outline-color: var(--brand-primary);
+  color:var(--body-text);
 }
 
 .search-input::placeholder {
@@ -25,7 +74,6 @@
 .select-wrapper {
   color: var(--body-text);
   border-left: solid 1px var(--lines-color);
-
 }
 
 .select-wrapper select {
@@ -48,11 +96,9 @@
   font-weight: 700;
 }
 
-
 .grid-item {
   border-radius: 0.5rem;
   background-color: var(--bg-default);
-  height: 17.5rem;
   box-shadow: rgba(99, 99, 99, 0.1) 0px 0px 5px 1px;
   text-align: left;
 }
@@ -66,7 +112,7 @@
   margin: 0;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  height: 8.5rem;
+  height: 9rem;
   object-fit: cover;
 }
 
@@ -74,17 +120,11 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: start;
   justify-content: space-between;
   width: 100%;
-  height: 9rem;
 }
 
-.grid-item section div {
-  width: 100%;
-}
-
-.grid-item div > h2 {
+.category {
   width: 100%;
   color: var(--body-text);
   font-size: 0.85rem;
@@ -94,7 +134,7 @@
   white-space: nowrap;
 }
 
-.grid-item div > h3 {
+.topic{
   color: var(--body-text);
   font-size: 0.95rem;
   font-weight: 700;
@@ -111,7 +151,15 @@
   padding: 0;
   color: var(--star-color);
 }
-
+.clipped-stars {
+  position: absolute;
+}
+.clipped-stars,
+.fixed-stars {
+  width: fit-content;
+  top: 0;
+  left: 0;
+}
 .grid-item .author {
   width: 100%;
   color: var(--body-text);

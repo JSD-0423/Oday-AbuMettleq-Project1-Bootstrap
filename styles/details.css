@@ -2,18 +2,9 @@
   padding-inline: 19%;
 }
 
-
 .topic-details {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  position: relative;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
   background-color: #333333;
-  width: 100%;
   color: #ededed;
-  gap: 1rem;
 }
 
 .category {
@@ -21,16 +12,32 @@
   font-size: 1rem;
   font-weight: 400;
 }
+
 .title {
   color: #ededed;
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 .rating {
+  position: relative;
+}
+
+.rate-star {
+  margin: 0;
+  padding: 0;
   color: var(--star-color);
 }
+.clipped-stars {
+  position: absolute;
+}
+.clipped-stars,
+.fixed-stars {
+  width: fit-content;
+  top: 0;
+  left: 0;
+}
 .description {
-  height: 100%;
   font-size: 1rem;
   font-weight: 400;
   display: -webkit-box;
@@ -39,78 +46,78 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .main-width {
   max-width: 33rem;
 }
+
 .side-bar {
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.06) 0 4px 5px;
   padding: 2px;
 }
+
 .side-bar img {
   background-color: white;
-  margin: 0;
-  width: 20rem;
-  object-fit: cover;
+  width: 19.5rem;
   height: 13rem;
 }
+
 .side-bar-content {
-  height: 100%;
+  width: 19.5rem;
   padding: 1rem;
   color: #333333;
 }
+
 .side-bar-content h3 {
   font-size: 1rem;
   font-weight: 400;
 }
+
 .side-bar-content > h3 > a {
   color: var(--brand-primary);
 }
+
 .add-to-fav {
-  display: flex;
-  flex-direction: column;
-  padding: 1.3rem;
-  margin-top: 0.5rem;
-  justify-content: space-between;
   border: solid 1px #dddddd;
-  gap: 5px;
 }
+
 .add-to-fav h3 {
   font-size: 1.1rem;
   font-weight: 400;
 }
+
 .add-to-fav h4 {
-  text-align: center;
   opacity: 0.7;
   color: #333333;
   font-size: 0.8rem;
   font-weight: 400;
 }
-.add-to-favorites {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 1rem;
-  border: 1px solid #dddddd;
 
+.add-to-favorites {
+  border: 1px solid #dddddd;
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 400;
   background-color: var(--brand-secondary);
 }
+
 .add-to-favorites ion-icon {
   font-size: 2rem;
 }
+
 .add-to-favorites p {
   padding-block: 0.8rem;
   margin: 0;
 }
+
 .sub-topics {
   margin-block: 2rem;
   display: flex;
   justify-content: start;
   align-items: center;
 }
+
 .sub-topics-content {
   width: 100%;
   background-color: var(--bg-default);
@@ -172,6 +179,7 @@
   }
   .side-bar {
     width: 100%;
+    margin-bottom: 1rem;
   }
 }
 

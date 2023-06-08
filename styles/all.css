@@ -16,8 +16,8 @@ h5,
 h6 {
   margin: 0;
 }
-.reset{
-  margin:0;
+.reset {
+  margin: 0;
   padding: 0;
 }
 .container {
@@ -41,7 +41,7 @@ header {
   font-weight: 400;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -104,7 +104,6 @@ a{
 .welcome-content {
   background-color: transparent;
   top: 7.4rem;
-
 }
 
 .welcome-title {
@@ -120,7 +119,6 @@ a{
   font-weight: 400;
   font-size: 1rem;
 }
-
 
 .favorites {
   height: 11rem;
@@ -153,10 +151,10 @@ a{
 }
 
 .favorite-topic img {
-
   background-color: white;
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
+  height: 4rem;
 }
 
 .favorite-topic h2 {
@@ -201,7 +199,6 @@ a{
 footer {
   color: var(--body-text);
   font-weight: 400;
-
 }
 
 footer ion-icon {

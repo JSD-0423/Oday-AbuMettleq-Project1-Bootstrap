@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Home Page Bootstrap</title>
+    <title>Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/theme.css" />
-    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/details.css" />
     <link rel="stylesheet" href="./styles/all.css" />
   </head>
   <body>
@@ -27,12 +27,14 @@
         class="container-fluid px-sm-4 px-lg-5 h-100 d-flex justify-content-between align-items-center"
         role="heading"
       >
-        <h1
-          class="page-title m-0"
-          aria-label="Page title navigates to home screen"
-        >
-          Web Topics
-        </h1>
+        <a href="index.html" class="text-decoration-none">
+          <h1
+            class="page-title m-0"
+            aria-label="Page title navigates to home screen"
+          >
+            Web Topics
+          </h1>
+        </a>
 
         <div class="btns-container d-flex gap-1">
           <button
@@ -74,84 +76,21 @@
           </h3>
         </div>
       </div>
-      <div class="main-container container-fluid px-sm-4 px-lg-5">
-        <div
-          class="search-bar d-flex justify-content-center my-4 w-100 rounded-3 shadow-sm"
-          role="search"
-        >
-          <div
-            class="d-flex align-items-center justify-content-start flex-grow-1"
-          >
-            <ion-icon
-              name="search-outline"
-              class="search-icon ps-3"
-              role="icon"
-            ></ion-icon>
-            <input
-              name="search"
-              class="search-input ps-5 w-100 h-100 border-0 rounded-start-3 bg-transparent"
-              type="text"
-              placeholder="Search the website..."
-              role="searchbox"
-              aria-label="Enter anything to search for"
-            />
-          </div>
 
-          <div class="select-container d-flex">
-            <div
-              class="select-wrapper w-50 d-flex justify-content-end flex-column px-2 py-2"
-            >
-              <label for="sort-by" class="select-label px-1" role="Select label"
-                >Sort by:</label
-              >
-              <select
-                id="sort-by"
-                role="select"
-                aria-label="Select option to sort by"
-              >
-                <option value="default" class="select-option" tabindex="1">
-                  Default
-                </option>
-                <option value="topic-title" class="select-option" tabindex="2">
-                  Topic Title
-                </option>
-                <option value="author-name" class="select-option" tabindex="3">
-                  Author Name
-                </option>
-              </select>
-            </div>
-            <div
-              class="select-wrapper w-50 d-flex justify-content-end flex-column px-2 py-2"
-            >
-              <label for="filter-by" class="select-label px-1"
-                >Filter by:</label
-              >
-              <select
-                id="filter-by"
-                role="select"
-                aria-label="Select option to sort by"
-              ></select>
-            </div>
-          </div>
-        </div>
+      <div
+        class="topic-details d-flex justify-content-start align-items-center position-relative pt-4 pb-2 gap-2 w-100 details-container"
+      >
+        <div class="main-width main-details"></div>
 
-        <h2 class="results"></h2>
-        <div class="loading-container">
-          <div class="loading-Circle">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
+        <aside class="side-bar"></aside>
+      </div>
 
-        <div
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 grid-container"
-          role="grid"
-        ></div>
+      <div class="sub-topics details-container">
+        <section class="sub-topics-content main-width">
+          <h2>HTML Sub Topics</h2>
+        </section>
       </div>
     </main>
-
     <div
       class="favorites container-fluid d-flex justify-content-evenly flex-column px-sm-4 px-lg-5 position-fixed bottom-0"
       role="favorites"
@@ -180,13 +119,12 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
-
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="./scripts/enableThemes.js" type="module"></script>
+    <script src="./scripts/details.js" type="module"></script>
     <script src="./scripts/favorites.js" type="module"></script>
-    <script src="./scripts/home.js" type="module"></script>
   </body>
 </html>
